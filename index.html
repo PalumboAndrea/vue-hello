@@ -24,9 +24,14 @@
         
         <div id="app">
 
-            <h1>
-                {{message}}
-            </h1>
+            <div class="title d-flex align-items-center">
+                <input v-model="message" class="m-2"/>
+
+                <h1>
+                    {{message}}
+                </h1>
+
+            </div>
 
             <img :src="url" alt="Sprinter Van" :class="size">
             
